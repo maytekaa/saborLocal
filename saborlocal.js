@@ -88,7 +88,7 @@ app.post("/cadastroprodutoartesanato", async(req, res)=>{;
 
     try{
         const newProdutoartesanato = await artesanato.save(); 
-        res.json({error : null, msg : "Produto cadastrado", artesanatoId : newProdutoartesanato._id}); 
+        res.json({error : null, msg : "Produto cadastrado!", artesanatoId : newProdutoartesanato._id}); 
     } 
     
     catch(error){
