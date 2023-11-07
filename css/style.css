@@ -1,0 +1,102 @@
+.navbar-brand{
+    font-family: 'Playfair Display', serif; 
+    font-size: x-large;
+} 
+
+.nav-link{
+    font-family: 'Playfair Display', serif;
+}
+
+.primary-bg-color {
+    background-color: #FFF;
+  }
+
+.segundary-bg-color {
+    background-color: grey;
+}
+
+.carousel-caption {
+    bottom: 2em;
+    padding: 1em;
+    left: 12%;
+    right: 12%;
+  }
+  
+.carousel-caption h5 {
+    font-size: 1.8em;
+  }
+
+@media(min-width: 768px) {
+    #slider .carousel-item,
+    #slider
+  
+    .carousel-caption {
+      left: 8%;
+      right: 22%;
+    }
+  
+    .carousel-caption h5 {
+      font-size: 4em;
+    }
+
+  }
+
+.linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 35px;
+  }
+
+  #bottom-banner {
+    background-color: #615b5b; 
+    padding: 6em;
+    margin-bottom: 4em;
+    text-align: center;
+  }
+  
+  #bottom-banner .offer-subtitle,
+  #bottom-banner h2 {
+    font-weight: bold;
+  }
+  
+  #bottom-banner .btn {
+    margin: 2em;
+    font-weight: bold;
+    padding: 1em;
+  }
+  
+  #bottom-banner img {
+    max-width: 175px;
+  }
+  
+  @media(min-width: 768px) {
+    #bottom-banner h2 {
+      font-size: 6em;
+    }
+  }
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 35px;
+  }
+
+.itemP {
+    height: 45px;
+    width: 240px;
+    margin: 8px 8px;
+    justify-content: center;
+}
+
+.h3{
+    font-family: 'Playfair Display', serif; 
+    font-size: x-large;
+}
+
+.logo{
+    justify-content: center;
+    width: 15%;
+    
+}

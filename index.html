@@ -2,10 +2,121 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AC </title>
+    <title>SABOR LOCAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="bg-black tamanho">
+        <img class="logo" src="img/logo.png" alt="Logo">
+        <div class="d-flex flex-row-reverse text-white espaco" >
+            <div class="p-2">Flex item 1</div>
+            <div class="p-2">Flex item 2</div>
+            <div class="p-2">Flex item 3</div>
+          </div>
+    </div>
     
+      <section>
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/img1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption">
+                  <h2>Aqui você encontra os melhores artesanatos do Brasil.</h2>
+                  <p>Venha conhecer.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/img2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption segundary-caption">
+                  <h2>Sabor Local!</h2>
+                  <p>Cestas, tapetes e decorações para sua casa.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/img3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption segundary-caption">
+                  <h2>Por aqui você encontra cultura e estilo no mesmo local.</h2>
+                  <p>Bem-Vindo.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+    </section>
+
+    <main class="linha">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/img4.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum </h5>
+          <p class="card-text">.</p>
+          <a href="produtos.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">COMPRE AGORA</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/img5.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum</h5>
+          <p class="card-text">.</p>
+          <a href="produtos.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">COMPRE AGORA</a>
+        </div>
+      </div>
+
+
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/img6.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Lorem ipsum</h5>
+          <p class="card-text">.</p>
+          <a href="produtos.html" class="btn btn-secondary btn-lg active" role="button" aria-pressed="true">COMPRE AGORA</a>
+        </div>
+      </div>
+    </main>
+
+    <div class="container-fluid" id="bottom-banner">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <p class="primary-bg-color offer-subtitle"></p>
+          <h2 class="text-white">Lorem ipsum</h2>
+          <p class="text-white">.</p>
+          <a href="login.html" class="btn btn bg-light dark-link">CLIQUE AQUI</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container bg-black pt-4 pb-4">
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active link-light" href="index.html">Index</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="produtos.html">Produtos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link-light" href="produtos.html">Contato</a>
+        </li>
+      </ul>
+  </footer>
 </body>
 </html>
