@@ -27,10 +27,10 @@ mongoose.connect('mongodb://127.0.0.1:27017/saborLocal',
 
 const usuarioSchema = new mongoose.Schema({ 
     email : {type : String, require : true}, 
-    senha : {type : Number}
+    senha : {type : Number, require : true}
 });
 
-const usuarioLogin = mongoose.model("Usuário", usuarioSchema);
+const usuarioLogin = mongoose.model("Usuario", usuarioSchema);
 
 const produtoartesanatoSchema = new mongoose.Schema({
     id_produtoartesanato : {type : String}, 
@@ -47,7 +47,7 @@ const Produtoartesanato = mongoose.model("ProdutoArtesanato", produtoartesanatoS
 //rota /cadastrousuario
 app.post("/cadastrousuario", async(req, res)=>{; 
     const email =  req.body.email;
-    const senha = req.body.numero;
+    const senha = req.body.senha;
 
     const usuariologin = new usuarioLogin({
         email : email, 
@@ -74,7 +74,7 @@ app.get("/", async(req, res)=>{
 app.post("/cadastroprodutoartesanato", async(req, res)=>{; 
     const id_produtoartesanato =  req.body.id_produtoartesanato;
     const descricao = req.body.descricao;
-    const artesao = req.body.descricao;
+    const artesao = req.body.artesao;
     const dataCriacao = req.body.dataCriacao; 
     const quantidadeEstoque = req.body.quantidadeEstoque;
 
