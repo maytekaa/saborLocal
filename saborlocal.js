@@ -25,14 +25,14 @@ mongoose.connect('mongodb://127.0.0.1:27017/saborLocal',
 
 //criando as models usuario e produto
 
-const usuario = new mongoose.Schema({ 
+const usuarioSchema = new mongoose.Schema({ 
     email : {type : String, require : true}, 
     senha : {type : Number}
 });
 
-const usuarioLogin = mongoose.model("Usuário", usuario);
+const usuarioLogin = mongoose.model("Usuário", usuarioSchema);
 
-const produtoartesanato = new mongoose.Schema({
+const produtoartesanatoSchema = new mongoose.Schema({
     id_produtoartesanato : {type : String}, 
     descricao : {type : String, require : true}, 
     artesao :  {type : String},
@@ -40,7 +40,7 @@ const produtoartesanato = new mongoose.Schema({
     quantidadeEstoque : {type : Number, require : true},
 });
 
-const Produtoartesanato = mongoose.model("ProdutoArtesanato", produtoartesanato);
+const Produtoartesanato = mongoose.model("ProdutoArtesanato", produtoartesanatoSchema);
 
 //configurando os roteamentos 
 
